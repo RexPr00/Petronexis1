@@ -599,7 +599,8 @@ input[type="range"] {
 .reviews {
   margin-top: 24px;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
@@ -614,7 +615,6 @@ input[type="range"] {
   gap: 10px;
   align-items: start;
 }
-
 
 
 .avatar {
@@ -636,6 +636,7 @@ input[type="range"] {
   align-items: center;
   gap: 10px;
 }
+
 .tag {
   background: rgba(201, 166, 107, 0.2);
   border: 1px solid rgba(201, 166, 107, 0.56);

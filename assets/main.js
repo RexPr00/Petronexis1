@@ -79,10 +79,9 @@
       if (msgEl) msgEl.textContent = text;
     });
   });
-
-  const investment = q('#calc-investment');
-  const yieldRange = q('#calc-yield');
-  const duration = q('#calc-duration');
+  const investment = q('#investment');
+  const yieldRange = q('#yield');
+  const duration = q('#duration');
   const investOut = q('[data-investment-value]');
   const yieldOut = q('[data-yield-value]');
   const durationOut = q('[data-duration-value]');

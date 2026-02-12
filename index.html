@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petronexis | Premium Energy Infrastructure Investment</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top">Petronexis</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a><a href="#investment">Investment</a><a href="#advantages">Advantages</a><a href="#metrics">Metrics</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-dropdown" data-lang-dropdown>
+          <button class="lang-toggle" type="button" data-lang-toggle>English</button>
+          <div class="lang-menu">
+            <a href="./index.html" aria-current="page">English</a><a href="./de/index.html">Deutsch</a><a href="./fr/index.html">Français</a><a href="./es/index.html">Español</a><a href="./it/index.html">Italiano</a>
+          </div>
+        </div>
+        <a class="btn btn-primary" href="#contact">Request a Call</a>
+      </div>
+      <button class="btn mobile-toggle" type="button" data-mobile-open>☰</button>
+    </div>
+  </header>
+
+  <div class="backdrop" data-mobile-backdrop></div>
+  <aside class="mobile-drawer" data-mobile-drawer>
+    <button class="icon-btn" type="button" data-mobile-close>✕</button>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a href="#about">About</a><a href="#investment">Investment</a><a href="#advantages">Advantages</a><a href="#metrics">Metrics</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="lang-dropdown" data-lang-dropdown>
+      <button class="lang-toggle" type="button" data-lang-toggle>English</button>
+      <div class="lang-menu">
+        <a href="./index.html" aria-current="page">English</a><a href="./de/index.html">Deutsch</a><a href="./fr/index.html">Français</a><a href="./es/index.html">Español</a><a href="./it/index.html">Italiano</a>
+      </div>
+    </div>
+    <p style="margin-top:16px"><a class="btn btn-primary" href="#contact">Request a Call</a></p>
+  </aside>
+
+  <main id="top">
+    <section id="about" class="section section-light hero">
+      <div class="container hero-grid reveal">
+        <div>
+          <span class="badge-pill">Petronexis</span>
+          <h1>Institutional-grade exposure to modern oil and gas infrastructure.</h1>
+          <p class="lead">Petronexis curates structured access to high-quality energy projects with disciplined governance, scenario modeling, and consistent investor reporting.</p>
+          <div class="trust-grid">
+            <article class="trust-card"><strong>$480M+</strong><span>Illustrative project pipeline reviewed</span></article>
+            <article class="trust-card"><strong>22</strong><span>Illustrative infrastructure counterparties</span></article>
+            <article class="trust-card"><strong>Quarterly</strong><span>Illustrative reporting cadence</span></article>
+            <article class="trust-card"><strong>2024</strong><span>Enhanced due-diligence framework update</span></article>
+          </div>
+        </div>
+        <div class="panel panel-light">
+          <h2 style="font-size:1.55rem">Speak with an advisor</h2>
+          <form class="form-stack" data-demo-form data-demo-message="Demo — submission disabled.">
+            <div><label for="f1">First Name</label><input id="f1" name="firstName" autocomplete="given-name" required></div>
+            <div><label for="l1">Last Name</label><input id="l1" name="lastName" autocomplete="family-name" required></div>
+            <div><label for="a1">Address</label><input id="a1" name="address" autocomplete="street-address" required></div>
+            <div><label for="p1">Phone Number</label><input id="p1" name="phone" autocomplete="tel" required></div>
+            <button class="btn btn-primary" type="submit">Request a Call</button>
+            <div class="form-msg" aria-live="polite"></div>
+          </form>
+          <p class="notice">By continuing, you agree to our <button type="button" data-open-privacy>Privacy Policy</button>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="investment" class="section section-dark">
+      <div class="container reveal">
+        <h2>Projected Return (Illustrative)</h2>
+        <div class="thin-divider"></div>
+        <div class="calc-wrap">
+          <div class="panel panel-dark">
+            <div class="slider-group">
+              <div class="slider-head"><label for="calc-investment">Investment Amount</label><span class="slider-value" data-investment-value></span></div>
+              <input id="calc-investment" type="range" min="5000" max="250000" step="1000" value="25000">
+            </div>
+            <div class="slider-group">
+              <div class="slider-head"><label for="calc-yield">Expected Annual Yield (%)</label><span class="slider-value" data-yield-value></span></div>
+              <input id="calc-yield" type="range" min="4" max="16" step="0.1" value="9.5">
+            </div>
+            <div class="slider-group">
+              <div class="slider-head"><label for="calc-duration">Duration (years)</label><span class="slider-value" data-duration-value></span></div>
+              <input id="calc-duration" type="range" min="1" max="10" step="1" value="4">
+            </div>
+            <label class="assumption"><input id="assumption-toggle" type="checkbox"> Apply conservative stress case</label>
+            <p class="disclaimer">Illustrative model only. Not investment advice. Returns are not guaranteed and depend on project performance, market pricing, and execution risk.</p>
+          </div>
+          <div class="output-box">
+            <small>Projected Total Value</small>
+            <div class="big-number" data-total></div>
+            <div class="kpis">
+              <div class="kpi"><strong data-profit></strong><span>Estimated Profit</span></div>
+              <div class="kpi"><strong data-gain></strong><span>Gain %</span></div>
+            </div>
+            <div class="progress"><span data-progress></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="advantages" class="section section-light">
+      <div class="container reveal">
+        <h2>Strategic Advantages</h2>
+        <div class="thin-divider"></div>
+        <div class="cards-grid">
+          <article class="premium-card"><div class="icon-circle">01</div><h3>Asset-led screening</h3><p>Projects are filtered through reserve quality, transport access, and operating discipline.</p><div class="mini-line"></div></article>
+          <article class="premium-card"><div class="icon-circle">02</div><h3>Structured risk controls</h3><p>Portfolio layering and phased deployment support balanced downside management.</p><div class="mini-line"></div></article>
+          <article class="premium-card"><div class="icon-circle">03</div><h3>Independent oversight</h3><p>Third-party technical and legal reviews are integrated before allocation decisions.</p><div class="mini-line"></div></article>
+          <article class="premium-card"><div class="icon-circle">04</div><h3>Contract visibility</h3><p>Revenue profile analysis prioritizes long-term offtake confidence.</p><div class="mini-line"></div></article>
+          <article class="premium-card"><div class="icon-circle">05</div><h3>Reporting clarity</h3><p>Investors receive concise operational and financial updates each cycle.</p><div class="mini-line"></div></article>
+          <article class="premium-card"><div class="icon-circle">06</div><h3>Execution monitoring</h3><p>Milestone tracking aligns partner performance with capital protection goals.</p><div class="mini-line"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="metrics" class="section section-dark">
+      <div class="container reveal">
+        <h2>Operational Metrics Board</h2>
+        <p>All figures below are illustrative for demonstration purposes.</p>
+        <div class="metrics-board">
+          <article class="metric-tile"><strong data-count-to="12" data-suffix="+">0+</strong><div>Years operating</div><small>illustrative</small></article>
+          <article class="metric-tile"><strong data-count-to="340" data-suffix="+">0+</strong><div>Projects reviewed</div><small>illustrative</small></article>
+          <article class="metric-tile"><strong data-count-to="22">0</strong><div>Infrastructure partners</div><small>illustrative</small></article>
+          <article class="metric-tile"><strong data-count-to="4" data-suffix="/yr">0/yr</strong><div>Reporting cadence</div><small>illustrative</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light">
+      <div class="container duo-layout reveal">
+        <div>
+          <h2>Built for disciplined private capital allocation.</h2>
+          <p>Our structure is designed for investors who value transparent process, verified documentation, and measured exposure to real-economy energy assets.</p>
+          <div class="callout"><strong>Focused mandate:</strong> selective participation in production-linked and logistics-linked opportunities with traceable reporting routes.</div>
+        </div>
+        <div>
+          <div class="feature-rows">
+            <article class="feature-row"><span class="check">✓</span><div><strong>Pre-commitment diligence</strong><br>Technical, legal, and operator checks before onboarding.</div></article>
+            <article class="feature-row"><span class="check">✓</span><div><strong>Governance checkpoints</strong><br>Allocation stages tied to milestone validation.</div></article>
+            <article class="feature-row"><span class="check">✓</span><div><strong>Investor communication stack</strong><br>Clear dashboards and periodic narrative reports.</div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" style="padding-top:0">
+      <div class="container reveal">
+        <h2>Portfolio Stability Indicators</h2>
+        <div class="metric-cards">
+          <article class="metric-light"><strong>86%</strong><span>Allocation stability</span></article>
+          <article class="metric-light"><strong>78%</strong><span>Contract coverage</span></article>
+          <article class="metric-light"><strong>Low–Med</strong><span>Risk band</span></article>
+          <article class="metric-light"><strong>120d</strong><span>Liquidity window</span></article>
+        </div>
+        <div class="bars">
+          <div class="bar-row"><span>Allocation stability</span><div class="bar-track"><span style="width:86%"></span></div><span>86%</span></div>
+          <div class="bar-row"><span>Contract coverage</span><div class="bar-track"><span style="width:78%"></span></div><span>78%</span></div>
+          <div class="bar-row"><span>Risk band positioning</span><div class="bar-track"><span style="width:64%"></span></div><span>64%</span></div>
+          <div class="bar-row"><span>Liquidity window score</span><div class="bar-track"><span style="width:71%"></span></div><span>71%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section section-dark">
+      <div class="container reveal">
+        <h2>Investor Reviews</h2>
+        <div class="reviews">
+          <article class="review premium-card"><div class="review-head"><div class="reviewer"><span class="avatar">DK</span><div><strong>Daniel Krauss</strong><br><small>Family Office Principal · Zurich</small></div></div><span class="tag">Verified Investor</span></div><p>Investor since 2023. Communication is direct and documentation quality is consistent across each reporting cycle.</p></article>
+          <article class="review premium-card"><div class="review-head"><div class="reviewer"><span class="avatar">HW</span><div><strong>Helena Ward</strong><br><small>Portfolio Manager · London</small></div></div><span class="tag">Verified Investor</span></div><p>Investor since 2024. I appreciate the conservative assumptions and the clear mapping of operational risks.</p></article>
+          <article class="review premium-card"><div class="review-head"><div class="reviewer"><span class="avatar">ML</span><div><strong>Marco Leoni</strong><br><small>Private Investor · Milan</small></div></div><span class="tag">Verified Investor</span></div><p>Investor since 2023. The platform avoids hype and keeps focus on measurable project fundamentals.</p></article>
+          <article class="review premium-card"><div class="review-head"><div class="reviewer"><span class="avatar">CM</span><div><strong>Claire Moreau</strong><br><small>Entrepreneur · Paris</small></div></div><span class="tag">Verified Investor</span></div><p>Investor since 2024. The quarterly updates and partner-level context make decisions easier.</p></article>
+        </div></div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section-light">
+      <div class="container reveal">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+          <details><summary>What is Petronexis?</summary><p>Petronexis is an illustrative private investment brand focused on curated opportunities across oil, gas, and related infrastructure.</p></details>
+          <details><summary>Is capital guaranteed?</summary><p>No. Capital is at risk. Returns depend on project outcomes, commercial terms, and market conditions.</p></details>
+          <details><summary>What are the key risks?</summary><p>Main risks include commodity price shifts, operational interruptions, counterparty exposure, and regulatory changes.</p></details>
+          <details><summary>What is the minimum allocation?</summary><p>Minimum allocation depends on the opportunity profile. During onboarding, an advisor explains current illustrative thresholds.</p></details>
+          <details><summary>How are returns structured?</summary><p>Returns can include cash distributions and value uplift, depending on project stage, contracts, and performance metrics.</p></details>
+          <details><summary>What are liquidity and exit terms?</summary><p>Liquidity windows vary by structure. Typical routes include scheduled redemptions or secondary transfer pathways.</p></details>
+          <details><summary>How often is reporting provided?</summary><p>Investors typically receive quarterly reporting with operational, financial, and risk summaries.</p></details>
+          <details><summary>What is the geographic focus?</summary><p>The illustrative mandate targets selected energy corridors in North America, Europe, and the Mediterranean basin.</p></details>
+          <details><summary>How is compliance and oversight handled?</summary><p>Processes include KYC screening, documentation controls, and layered governance review for participating entities.</p></details>
+          <details><summary>Who is this intended for?</summary><p>This profile is generally suitable for informed investors seeking measured exposure to energy infrastructure themes.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-dark">
+      <div class="container reveal" style="max-width:760px">
+        <h2>Next steps</h2>
+        <p>Share your details and a Petronexis advisor will contact you to discuss mandate fit, risk profile, and timeline.</p>
+        <div class="panel panel-dark">
+          <form class="form-stack" data-demo-form data-demo-message="Demo — submission disabled.">
+            <div><label for="f2">First Name</label><input id="f2" name="firstName" required></div>
+            <div><label for="l2">Last Name</label><input id="l2" name="lastName" required></div>
+            <div><label for="a2">Address</label><input id="a2" name="address" required></div>
+            <div><label for="p2">Phone Number</label><input id="p2" name="phone" required></div>
+            <button class="btn btn-primary" type="submit">Request a Call</button>
+            <div class="form-msg" aria-live="polite"></div>
+          </form>
+          <p class="notice" style="color:#ced5e8">Read our <button type="button" data-open-privacy style="color:#d7b987">Privacy Policy</button>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>© 2026 Petronexis</div>
+      <div class="footer-links">
+        <a href="#about">About</a><a href="#investment">Investment</a><a href="#faq">FAQ</a><button type="button" data-open-privacy style="background:none;border:0;color:inherit;cursor:pointer">Privacy Policy</button>
+      </div>
+    </div>
+  </footer>
+
+  <div class="backdrop" data-modal-backdrop></div>
+  <div class="modal" data-privacy-modal>
+    <div class="modal-head"><h2 style="font-size:1.5rem">Privacy Policy</h2><button class="icon-btn" type="button" data-close-privacy>✕</button></div>
+    <p>Petronexis processes contact details solely to respond to inquiries, provide onboarding communication, and deliver investor-related updates requested by you. We apply procedural safeguards to prevent unauthorized access, misuse, or disclosure.</p>
+    <p>Your information may include name, address, phone number, interaction notes, language preference, and request context. We use this information to route your inquiry to the appropriate advisor, improve response quality, and maintain a consistent communication record.</p>
+    <p>Data is retained only for a reasonable period tied to communication needs, legal and compliance obligations, recordkeeping standards, and account follow-up requirements. Retention windows are periodically reviewed to ensure data minimization principles are respected.</p>
+    <p>Where service partners are used for secure hosting, analytics, or communication delivery, processing is limited to authorized tasks and governed by contractual confidentiality and security obligations. We do not sell your personal data to third parties for advertising purposes.</p>
+    <p>You may request access, correction, portability, restriction, or deletion of your personal data where applicable by contacting our support channel. We may ask for identity verification before fulfilling rights requests to protect account security.</p>
+    <p>Cookies or similar technologies may be used to maintain basic site functionality, improve performance, and understand anonymous usage patterns. You can control cookie behavior through your browser settings, though some features may be impacted.</p>
+    <p>Illustrative website forms do not execute real transactions and are provided for demonstration purposes only. By using this site, you acknowledge that no guarantee of return is offered and that investment-related content is informational, non-binding, and subject to jurisdictional restrictions.</p>
+    <p><button class="btn" type="button" data-close-privacy>Close</button></p>
+  </div>
+
+  <script src="./assets/main.js"></script>
+</body>
+</html>
